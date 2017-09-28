@@ -55,26 +55,16 @@ Student* List::searchbystuid(string id){
 }
 Student* List::searchbyfname(string name){
     ptr = ptrhead;
-    while(ptr->getfname() != name){
-        if(ptr->getnexrstudent()==NULL){
-            return NULL;
+    while(ptr->getnexrstudent()!= NULL){
+        if(ptr->getfname()==name){
+            return ptr;
         }else{
-            ptr = ptr->getnexrstudent();
+           ptr = ptr->getnexrstudent();
         }
     }
-    return ptr;
+    return NULL;
 }
-Student* List::searchbylname(string name){
-    ptr = ptrhead;
-    while(ptr->getlname()!= name){
-        if(ptr->getnexrstudent()==NULL){
-            return NULL;
-        }else{
-            ptr = ptr->getnexrstudent();
-        }
-    }
-    return ptr;
-}
+    
 void List::displaystudent(){
     Student *temp = new Student;
     temp = ptrhead;
@@ -85,4 +75,15 @@ void List::displaystudent(){
         temp = temp->getnexrstudent();
     }
    
+}
+Student* List::searchbylname(string name){
+    ptr = ptrhead;
+    while(ptr->getnexrstudent()!= NULL){
+        if(ptr->getlname()==name){
+            return ptr;
+        }else{
+            ptr = ptr->getnexrstudent();
+        }
+    }
+    return NULL;
 }

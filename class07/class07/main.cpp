@@ -13,19 +13,23 @@ int menu(){
     int option;
     cout <<"Main menu\n"
     <<"==========\n"
-    <<"1.) Add a new student"
+    <<"1.) Add a new student\n"
     <<"2.) find specific student\n"
-    <<"3.) update the info for a single student\n "
+    <<"3.) update the info for a single student\n"
     <<"4.) view all students\n"
+    <<"5.) exit program\n"
     <<"enter your coice: ";
     cin >> option;
     return option;
 }
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int option = menu();
+    
     List *studentlist = new List();
     Student* temp;
+    int option;
+    do{
+        option = menu();
     switch(option){
         case 1:{
             string tempn;
@@ -61,15 +65,23 @@ int main(int argc, const char * argv[]) {
                 if (option ==1){
                     string name;
                     cout<<"enter a first name"<<endl;
-                    //first name
+                    cin >> name;
                    temp = studentlist->searchbyfname(name);
                     if(temp==NULL){
-                        cout<<"the object your searching for dosent exist"<<endl;
+                        cout<<"the student your searching for dosent exist"<<endl;
+                    }else{
+                         temp->getinfo();
                     }
                 }else{
                     string name;
                     cout<<"enter a last name"<<endl;
+                    cin >> name;
                   temp = studentlist->searchbylname(name);
+                    if(temp==NULL){
+                        cout<<"the student your searching for dosent exist"<<endl;
+                    }else{
+                        temp->getinfo();
+                    }
                 }
             }else{
                 
@@ -88,16 +100,11 @@ int main(int argc, const char * argv[]) {
             studentlist->displaystudent();
             break;
         }
+            
     }
-    
-    
-    
-          
-    
-    
-    
-    
-    
-    
-       return 0;
+       
+        
+    }while(option != 5);
+     return 0;
 }
+
