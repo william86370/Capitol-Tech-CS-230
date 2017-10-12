@@ -60,9 +60,9 @@ int main(int argc, const char * argv[]) {
         }
         
         
-        stulist->createstudent(fname, lname, NULL, NULL);
+        stulist->createstudent(fname, lname, classarr, grades,classc);
         
     }
-    
+    stulist->displaystudents();
     
 }

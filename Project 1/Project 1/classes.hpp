@@ -57,5 +57,6 @@ classes* classes::getnext(){
     return next;
 }
 void classes::getinfo(){
-    cout << name;
+    cout << "class: "<<name;
+    cout<< "grade: "<<grade;
 }

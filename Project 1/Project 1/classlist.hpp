@@ -22,6 +22,7 @@ public:
     void createxclass(string,double,classes*);
     void displayclasses();
     void createclass(classes*);
+    void createclass(classes*,double);
     classes* findclass(string);
 };
 classlist::classlist(){
@@ -31,6 +32,7 @@ classlist::classlist(){
 classes* classlist::findclass(string find){
     ptr = ptrhead;
     while(ptr->getnext()!= NULL){
+        cout<<ptr->getname();
         if(ptr->getname()==find){
             return ptr;
         }else{
@@ -38,6 +40,23 @@ classes* classlist::findclass(string find){
         }
     }
     return NULL;
+}
+void classlist::createclass(classes* cl,double gr){
+    classes* temp = new classes;
+    temp->setname(cl->getname());
+    temp->setgrade(gr);
+    temp->setnext(NULL);
+    if(ptrhead==NULL)
+    {
+        ptrhead=temp;
+        ptrend=temp;
+        temp=NULL;
+    }
+    else
+    {
+        ptrend->setnext(temp);
+        ptrend=temp;
+    }
 }
 void classlist::createclass(classes* cl){
     classes* temp = new classes;
