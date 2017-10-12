@@ -8,37 +8,38 @@
 
 #ifndef list_hpp
 #define list_hpp
-#include "student.hpp"
+#include "Client.hpp"
 #include <stdio.h>
 
 #endif /* list_hpp */
-class List{
+class ClientList{
 private:
-    Student* ptrhead;
-    Student* ptrend;
-    Student* ptr;
+    client* ptrhead;
+    client* ptrend;
+    client* ptr;
     
- 
+    
 public:
-    List();
-   void createstudent(string id,string fn,string ln,int cred);
-    void displaystudent();
-    void sortstudents();
-    Student* searchbyfname(string);
-    Student* searchbylname(string);
-    Student* searchbystuid(string);
+    ClientList();
+    void createcustomer(string name,string name2,int id,int pur);
+    void displayclient();
+    void sortclient();
+    client* searchbyfname(string);
+    client* searchbylname(string);
+    client* searchbyid(int);
+    client* findhighestpur();
 };
-List::List(){
+ClientList::ClientList(){
     ptrhead = NULL;
     ptrend = NULL;
 }
-void List::createstudent(string ID, string FN, string LN , int cr){
-    Student *temp= new Student(ID,FN,LN,cr,NULL);
-    temp->setcredits(cr);
-    temp->setname(FN, LN);
-    temp->setID(ID);
-    temp->nextstudent(NULL);
-    temp->nextstudent(NULL);
+void ClientList::createcustomer(string fname,string lname, int id, int pur){
+    client *temp= new client(fname,lname,id,pur,NULL);
+    temp->setfname(fname);
+      temp->setlname(lname);
+    temp->setid(id);
+    temp->setperchase(pur);
+    temp->setnextclient(NULL);
     if(ptrhead==NULL)
     {
         ptrhead=temp;
@@ -47,55 +48,74 @@ void List::createstudent(string ID, string FN, string LN , int cr){
     }
     else
     {
-        ptrend->nextstudent(temp);
+        ptrend->setnextclient(temp);
         ptrend=temp;
     }
 }
-Student* List::searchbystuid(string id){
+client* ClientList::searchbyid(int name){
     ptr = ptrhead;
-    while(ptr->getstuid() != id){
-        if(ptr->getnexrstudent()==NULL){
-            return NULL;
-        }else{
-        ptr = ptr->getnexrstudent();
-        }
-    }
-    return ptr;
-}
-Student* List::searchbyfname(string name){
-    ptr = ptrhead;
-    while(ptr->getnexrstudent()!= NULL){
-        if(ptr->getfname()==name){
+    while(ptr->getnextclient()!= NULL){
+        if(ptr->getid()==name){
             return ptr;
         }else{
-           ptr = ptr->getnexrstudent();
+            ptr = ptr->getnextclient();
         }
     }
     return NULL;
 }
-    
-void List::displaystudent(){
-    Student *temp = new Student;
+client* ClientList::searchbyfname(string name){
+    ptr = ptrhead;
+    while(ptr->getnextclient()!= NULL){
+        if(ptr->getfname()==name){
+            return ptr;
+        }else{
+            ptr = ptr->getnextclient();
+        }
+    }
+    return NULL;
+}
+
+void ClientList::displayclient(){
+    client *temp = new client;
     temp = ptrhead;
     while(temp!=NULL)
     {
         temp->getinfo();
         cout<<endl;
-        temp = temp->getnexrstudent();
+        temp = temp->getnextclient();
     }
-   
+    
 }
-Student* List::searchbylname(string name){
+client* ClientList::searchbylname(string name){
     ptr = ptrhead;
-    while(ptr->getnexrstudent()!= NULL){
+    while(ptr->getnextclient()!= NULL){
         if(ptr->getlname()==name){
             return ptr;
         }else{
-            ptr = ptr->getnexrstudent();
+            ptr = ptr->getnextclient();
         }
     }
     return NULL;
 }
+client* ClientList::findhighestpur(){
+    
+    client *temp = new client;
+    client *temp2 = new client;
+    temp = ptrhead;
+    temp2 = ptrhead;
+    int highestpur = temp->getpurchase();
+    while(temp!=NULL)
+    {
+        if (temp->getpurchase() > highestpur) {
+
+            temp2 = temp;
+            highestpur = temp->getpurchase();
+        }
+        temp = temp->getnextclient();
+    }
+    return temp2;
+}
+/*
 void List::sortstudents(){
     Student* temphead = ptrhead;
     Student* temp2 = NULL;
@@ -103,7 +123,7 @@ void List::sortstudents(){
     string tempfn;
     string templn;
     int tempcr;
-   
+    
     int counter =-1;
     while(temphead){
         counter++;
@@ -115,9 +135,9 @@ void List::sortstudents(){
         for(int j =0;j<counter;j++){
             if(temphead->getstuid() > temp2->getstuid()){
                 
-             tempid = temphead->getstuid();
+                tempid = temphead->getstuid();
                 tempfn = temphead->getfname();
-                 templn = temphead->getlname();
+                templn = temphead->getlname();
                 tempcr = temphead->getcredits();
                 temphead->setID(temp2->getstuid());
                 temphead->setname(temp2->getfname(), temp2->getlname());
@@ -130,10 +150,11 @@ void List::sortstudents(){
             }else{
                 temp2 = temp2->getnexrstudent();
                 temphead = temphead->getnexrstudent();
-    }
+            }
         }
         temphead = ptrhead;
         temp2 = temphead->getnexrstudent();
     }
     
 }
+*/

@@ -15,7 +15,7 @@ int menu(){
     <<"==========\n"
     <<"1.) Add a new student\n"
     <<"2.) find specific student\n"
-    <<"3.) update the info for a single student\n"
+    <<"3.) sort bb\n"
     <<"4.) view all students\n"
     <<"5.) exit program\n"
     <<"enter your coice: ";
@@ -92,7 +92,11 @@ int main(int argc, const char * argv[]) {
             
             break;
         }case 3:{
+            studentlist->sortstudents();
             
+            
+            
+             
             
             break;
         }

@@ -8,8 +8,17 @@
 
 #include <iostream>
 
+#include "StudentList.hpp"
+#include "CourseList.hpp"
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    StudentList *Stulist = new StudentList;
+    Stulist->createStudent("11345", "william", "wright", 4);
+    Stulist->createStudent("11347", "gladdy", "wright", 4);
+    Stulist->displayStudent();
+    
+    
+    
+    
     return 0;
 }

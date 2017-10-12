@@ -1,4 +1,4 @@
-//student.h
+//Student.h
 #include<fstream>
 #include <iostream>
 using namespace std;
@@ -12,19 +12,18 @@ private:
     Student* stu;
 public:
     //utilities
-    //fill an array of students
+    //fill an array of Students
     Student();
     Student(string ,string ,string ,int ,Student* );
   void setID(string);
     void setname(string,string);
     void setcredits(int);
-    void nextstudent(Student* stu);
-    Student* getnexrstudent();
+    void nextStudent(Student* stu);
+    Student* getnexrStudent();
     void getinfo();
     string getfname();
      string getlname();
     string getstuid();
-    int getcredits();
 };
 //class implamation
 Student::Student(){
@@ -46,15 +45,16 @@ Student::Student(string id,string fn,string ln,int cred,Student* st){
     lname="";
     credits=0;
     stu=NULL;
+    cout<<"Student ID: "<<stuID<<endl;
+    cout<<"Student first name is: "<<fname<<endl;
+    cout<<"Student last name is: "<<lname<<endl;
+    cout<<"Student credit number is: "<<credits<<endl;
 }
 string Student::getstuid(){
     return stuID;
 }
 void Student::setID(string id){
     stuID =id;
-}
-int Student::getcredits(){
-    return credits;
 }
 void Student::setname(string i, string k){
     fname = i;
@@ -63,10 +63,10 @@ void Student::setname(string i, string k){
 void Student::setcredits(int c){
     credits =c;
 }
-void Student::nextstudent(Student* su){
+void Student::nextStudent(Student* su){
     stu = su;
 }
-Student* Student::getnexrstudent(){
+Student* Student::getnexrStudent(){
     return stu;
 }
 void Student::getinfo(){
