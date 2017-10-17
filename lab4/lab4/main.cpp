@@ -1,35 +1,33 @@
-//
-//  main.cpp
-//  lab4
-//Lukas Fuller, William Wright, Sharon Blankenship, Alan Morrison, Will Varner
-
 //main.cpp
-#include<cstdlib>
-#include "list.hpp"
+//Lab 4 part 1
+//helpful tutorial used: https://www.youtube.com/watch?v=psJtcFpoUdY
+//names: Lukas Fuller, Alan Morrison, William Wright, Sharon Blankenship, Will Varner
+#include <cstdlib>
+#include "List.cpp"
 using namespace std;
-
-int main(int argc, char** argv){
-    //Creating the list
-    List People;
-    
-    //Adding names to the list
-    People.addPerson("Bob", "Joe");
-    People.addPerson("Joe", "Bob");
-    People.addPerson("Bill", "Walton");
-    
-    //Displaying the names in the list
-    People.printList();
-    cout << "\n";
-    
-    //Displaying the error when the name isn't in the list
-    People.deletePerson("Generic", "Name");
-    cout << "\n";
-    
-    //Deleting a current name and Displaying the list
-    People.deletePerson("Joe", "Bob");
-    cout << "\n";
-    People.printList();
-    return 0;
+  int main(int argc, char **argv)
+{
+        //Creating the object Person
+   List People;
+       
+    //Adding names
+   People.AddPerson("Bob", "Joe");
+       People.AddPerson("Joe", "Bob");
+       People.AddPerson("Bill", "Walton");
+       
+    //Displaying the names in the list
+   People.PrintList();
+       
+    //Displaying the error when the name isn't in the list
+   People.DeletePerson("Generic", "Name");
+       
+    //Edit a person and display the result
+   People.EditPerson("Bob", "Joe", "Max", "Scott");
+       People.PrintList();
+       
+   
+    //Deleting a current name and Displaying the list
+   People.DeletePerson("Joe", "Bob");
+       People.PrintList();
+       return 0;
 }
-
-
