@@ -39,6 +39,12 @@ classes* classlist::findclass(string find){
             ptr = ptr->getnext();
         }
     }
+    if(ptr->getnext()== NULL){
+        cout<<ptr->getname();
+        if(ptr->getname()==find){
+            return ptr;
+        }
+    }
     return NULL;
 }
 void classlist::createclass(classes* cl,double gr){

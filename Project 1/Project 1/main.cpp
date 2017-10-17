@@ -53,7 +53,7 @@ int main(int argc, const char * argv[]) {
                     cout<<" the class you entered dosent exist"<<endl;
                 }
             }while(v==0);
-            classarr[i] = classe->findclass(fname);
+           
             cout<<"enter the students grade for class: "<<(i+1);
             double gname;
             cin >> gname;
