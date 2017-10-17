@@ -8,7 +8,7 @@
 
 //main.cpp
 #include<cstdlib>
-#include "list.hpp"
+#include "List.hpp"
 using namespace std;
 
 int main(int argc, char** argv){
@@ -32,6 +32,11 @@ int main(int argc, char** argv){
     People.deletePerson("Joe", "Bob");
     cout << "\n";
     People.printList();
+    
+    //Edit a person and display the result
+    People.EditPerson("Bob", "Joe", "Max", "Scott");
+    People.printList();
+
     return 0;
 }
 

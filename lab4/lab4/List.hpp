@@ -28,6 +28,8 @@ public:
     void addPerson(string addFName, string addLName);
     void deletePerson(string delFName, string delLName);
     void printList();
+    void EditPerson(string currFName, string currLName, string editFName, string editLName);
+
 };
 
 List::List(){
@@ -91,4 +93,30 @@ void List::printList(){
         curr = curr->next;
     }
 }
+void List::EditPerson(string currFName, string currLName, string editFName, string editLName){
+    nodePtr editPtr = NULL;
+    temp = head;
+    curr = head;
+    while(curr != NULL && curr->fName != currFName && curr->lName != currLName){
+        temp = curr;
+        curr = curr->next;
+    }
+    if(curr == NULL){
+        cout << currFName << " " << currLName <<" was not already in the list of people" <<endl;
+        delete editPtr;
+    }
+    else{
+        editPtr = curr;
+        curr = curr->next;
+        cout << "The Name: " << currFName << " " << currLName << "\n"
+        << "Was changed to: "<< editFName << " " << editLName << endl;
+        editPtr->fName = editFName;
+        editPtr->lName = editLName;
+    }
+    cout << "\n";
+}
+
+
+
+
 

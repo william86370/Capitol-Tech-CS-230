@@ -58,5 +58,8 @@ classes* classes::getnext(){
 }
 void classes::getinfo(){
     cout << "class: "<<name;
-    cout<< "grade: "<<grade;
+    if(grade!= NULL){
+         cout<< "grade: "<<grade;
+    }
+   
 }
