@@ -1,7 +1,7 @@
 //
 //  main.cpp
 //  Project 1
-
+//Lukas Fuller, William Wright, Sharon Blankenship, Alan Morrison, Will Varner
 #include <iostream>
 #include "studentlist.hpp"
 using namespace std;

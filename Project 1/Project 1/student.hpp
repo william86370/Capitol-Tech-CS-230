@@ -1,7 +1,7 @@
 //
 //  student.hpp
 //  Project 1
-
+//Lukas Fuller, William Wright, Sharon Blankenship, Alan Morrison, Will Varner
 #ifndef student_hpp
 #define student_hpp
 

@@ -1,10 +1,7 @@
 //
 //  main.cpp
 //  lab4
-//
-//  Created by william wright on 10/17/17.
-//  Copyright © 2017 SilverTap. All rights reserved.
-//
+//Lukas Fuller, William Wright, Sharon Blankenship, Alan Morrison, Will Varner
 
 //main.cpp
 #include<cstdlib>

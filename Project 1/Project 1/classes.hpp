@@ -1,7 +1,7 @@
 //
 //  classes.hpp
 //  Project 1
-
+//Lukas Fuller, William Wright, Sharon Blankenship, Alan Morrison, Will Varner
 #ifndef classes_hpp
 #define classes_hpp
 
