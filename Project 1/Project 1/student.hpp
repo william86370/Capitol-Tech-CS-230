@@ -24,7 +24,6 @@ public:
     void setnext(student*);
     classlist* getclasslist();
     void getinfo();
-    void setgrade(double,string);
     void setcorce(classes*);
 private:
     string fname;
@@ -70,7 +69,4 @@ void student::getinfo(){
     <<endl;
     cout<<"this student is takeing"<<endl;
     list->displayclasses();
-}
-void student::setgrade(double gr,string name){
-    
 }

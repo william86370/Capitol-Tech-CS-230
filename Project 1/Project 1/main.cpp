@@ -12,15 +12,15 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     
     classlist* classe = new classlist;
-    cout<<"enter the amount of corces this university has"<<endl;
+    cout<<"enter the amount of courses this university has: ";
     int len;
     cin >> len;
     for (int i = 0; i<len; i++) {
-        cout<<"enter a name for  class "<<i<<" :";
+        cout<<endl<<"enter a name for class "<<(i+1)<<":";
         string name;
         cin >> name;
         classe->createxclass(name, NULL, NULL);
-        cout<<endl;
+        
     }
     classe->displayclasses();
     int stuc;
@@ -28,10 +28,10 @@ int main(int argc, const char * argv[]) {
     cin>>stuc;
     studentlist* stulist = new studentlist;
     for(int i =0;i<stuc;i++){
-        cout<<"enter a first name for student "<<i<<" :";
+        cout<<"enter a first name for student "<<(i+1)<<" :";
         string fname;
         cin >> fname;
-        cout<<"enter a last name for student "<<i<<" :";
+        cout<<"enter a last name for student "<<(i+1)<<" :";
         string lname;
         cin >> lname;
         cout<<"how many classes is the student taking";
@@ -40,20 +40,21 @@ int main(int argc, const char * argv[]) {
         classes* classarr[classc];
         double grades[classc];
         for(int i=0;i<classc;i++){
-            cout<<"enter the name of class "<<i;
-            string fname;
-            cin >> fname;
             int v =0;
             do{
+                cout<<"enter the name of class "<<(i+1)<<": ";
+                string fname;
+                cin >> fname;
+                v=0;
                 classarr[i] = classe->findclass(fname);
                 if(classarr[i]!= NULL){
                     v=1;
                 }else{
-                    cout<<"the "<<i;
+                    cout<<" the class you entered dosent exist"<<endl;
                 }
             }while(v==0);
             classarr[i] = classe->findclass(fname);
-            cout<<"enter the students grade for this class"<<i;
+            cout<<"enter the students grade for class: "<<(i+1);
             double gname;
             cin >> gname;
             grades[i] = gname;
