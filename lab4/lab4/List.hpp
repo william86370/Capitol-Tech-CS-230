@@ -25,9 +25,9 @@ private:
     
 public:
     List();
-    void AddPerson(string addFName, string addLName);
-    void DeletePerson(string delFName, string delLName);
-    void PrintList();
+    void addPerson(string addFName, string addLName);
+    void deletePerson(string delFName, string delLName);
+    void printList();
 };
 
 List::List(){
@@ -36,7 +36,7 @@ List::List(){
     temp = NULL;
 }
 
-void List::AddPerson(string addFName, string addLName){
+void List::addPerson(string addFName, string addLName){
     nodePtr n = new node;
     n->next = NULL;
     n->fName = addFName;
@@ -54,7 +54,7 @@ void List::AddPerson(string addFName, string addLName){
     }
 }
 
-void List::DeletePerson(string delFName, string delLName){
+void List::deletePerson(string delFName, string delLName){
     nodePtr delPtr = NULL;
     temp = head;
     curr = head;
@@ -82,7 +82,7 @@ void List::DeletePerson(string delFName, string delLName){
     
 }
 
-void List::PrintList(){
+void List::printList(){
     curr = head;
     cout << "The current list of people include:\n";
     while (curr != NULL)

@@ -16,22 +16,22 @@ int main(int argc, char** argv){
     List People;
     
     //Adding names to the list
-    People.AddPerson("Bob", "Joe");
-    People.AddPerson("Joe", "Bob");
-    People.AddPerson("Bill", "Walton");
+    People.addPerson("Bob", "Joe");
+    People.addPerson("Joe", "Bob");
+    People.addPerson("Bill", "Walton");
     
     //Displaying the names in the list
-    People.PrintList();
+    People.printList();
     cout << "\n";
     
     //Displaying the error when the name isn't in the list
-    People.DeletePerson("Generic", "Name");
+    People.deletePerson("Generic", "Name");
     cout << "\n";
     
     //Deleting a current name and Displaying the list
-    People.DeletePerson("Joe", "Bob");
+    People.deletePerson("Joe", "Bob");
     cout << "\n";
-    People.PrintList();
+    People.printList();
     return 0;
 }
 
