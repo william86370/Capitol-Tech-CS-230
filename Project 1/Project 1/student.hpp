@@ -1,10 +1,6 @@
 //
 //  student.hpp
 //  Project 1
-//
-//  Created by william wright on 10/10/17.
-//  Copyright © 2017 SilverTap. All rights reserved.
-//
 
 #ifndef student_hpp
 #define student_hpp

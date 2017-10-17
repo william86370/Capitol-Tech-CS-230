@@ -1,10 +1,6 @@
 //
 //  classlist.hpp
 //  Project 1
-//
-//  Created by william wright on 10/10/17.
-//  Copyright © 2017 SilverTap. All rights reserved.
-//
 
 #ifndef classlist_hpp
 #define classlist_hpp
