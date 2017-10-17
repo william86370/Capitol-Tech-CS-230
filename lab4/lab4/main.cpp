@@ -8,7 +8,7 @@
 
 //main.cpp
 #include<cstdlib>
-#include "list.cpp"
+#include "list.hpp"
 using namespace std;
 
 int main(int argc, char** argv){

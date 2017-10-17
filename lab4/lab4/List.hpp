@@ -1,12 +1,10 @@
 //
-//  list.cpp
+//  List.hpp
 //  lab4
 //
 //  Created by william wright on 10/17/17.
 //  Copyright © 2017 SilverTap. All rights reserved.
 //
-
-
 //List.cpp
 #include <cstdlib>
 #include <iostream>
@@ -93,3 +91,4 @@ void List::PrintList(){
         curr = curr->next;
     }
 }
+
