@@ -55,7 +55,7 @@ int main()
                 Decryption();
                 outData.open("clients.dat");
                 for (i = 0; i < dbClients; i++)
-                    outData <<cl[i].fname<<" "<<cl[i].lname<<" "<<cl[i].checking<<" "<<cl[i].savings<<endl;
+                    outData <<cl[i].fName<<" "<<cl[i].lName<<" "<<cl[i].checking<<" "<<cl[i].savings<<endl;
                 outData.close();}
                 
                 break;

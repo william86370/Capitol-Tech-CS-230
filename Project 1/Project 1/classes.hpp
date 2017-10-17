@@ -20,13 +20,13 @@ private:
 public:
     classes();
     classes(string,double,classes*);
-    string getname();
-    double getgrade();
-    void setname(string);
-    void setgrade(double);
-    void setnext(classes*);
-    classes* getnext();
-    void getinfo();
+    string getName();
+    double getGrade();
+    void setName(string);
+    void setGrade(double);
+    void setNext(classes*);
+    classes* getNext();
+    void getInfo();
 };
 classes::classes(){
     name ="";
@@ -38,25 +38,25 @@ classes::classes(string name2,double grade2,classes* CL){
     grade = grade2;
     next = CL;
 }
-string classes::getname(){
+string classes::getName(){
     return name;
 }
-double classes::getgrade(){
+double classes::getGrade(){
     return grade;
 }
-void classes::setname(string inn){
+void classes::setName(string inn){
     name = inn;
 }
-void classes::setgrade(double gg){
+void classes::setGrade(double gg){
     grade = gg;
 }
-void classes::setnext(classes* ne){
+void classes::setNext(classes* ne){
     next = ne;
 }
-classes* classes::getnext(){
+classes* classes::getNext(){
     return next;
 }
-void classes::getinfo(){
+void classes::getInfo(){
     cout << "class: "<<name;
     cout<< "grade: "<<grade;
 }

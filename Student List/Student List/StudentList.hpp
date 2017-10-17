@@ -30,10 +30,10 @@ StudentList::StudentList(){
 void StudentList::createStudent(string ID, string FN, string LN , int cr){
     Student *temp = new Student;
     temp->setID(ID);
-    temp->setname(FN, LN);
+    temp->setName(FN, LN);
     temp->setcredits(cr);
     temp->nextStudent(NULL);
-     temp->getinfo();
+     temp->getInfo();
     if(ptrhead==NULL)
     {
         ptrhead=temp;
@@ -51,7 +51,7 @@ void StudentList::displayStudent(){
     temp = ptrhead;
     while(temp!=NULL)
     {
-        temp->getinfo();
+        temp->getInfo();
         cout<<endl;
         temp = temp->getnexrStudent();
     }

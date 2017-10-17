@@ -28,36 +28,36 @@ using namespace std;
 #endif /* Client_hpp */
 class client{
 private:
-    string fname;
-    string lname;
+    string fName;
+    string lName;
     int id;
     int purchases;
     client* nextclient;
 public:
     client();
     client(string,string,int,int,client*);
-    string getfname();
+    string getFName();
     string getlname();
     int getid();
     int getpurchase();
-    void setfname(string);
-    void setlname(string);
+    void setFName(string);
+    void setLName(string);
     void setid(int);
     void setperchase(int);
     client* getnextclient();
     void setnextclient(client*);
-    void getinfo();
+    void getInfo();
 };
 client::client(){
-    fname = "";
-    lname = "";
+    fName = "";
+    lName = "";
     id = 0;
     purchases = 0;
     nextclient = NULL;
 }
 client::client(string name2,string l,int id2,int pur,client* c){
-    fname = name2;
-    lname = l;
+    fName = name2;
+    lName = l;
     id = id2;
     purchases = pur;
     setnextclient(c);
@@ -68,11 +68,11 @@ int client::getid(){
 int client::getpurchase(){
     return purchases;
 }
-string client::getfname(){
-    return fname;
+string client::getFName(){
+    return fName;
 }
 string client::getlname(){
-    return lname;
+    return lName;
 }
 void client::setid(int id2){
      id=id2;
@@ -80,11 +80,11 @@ void client::setid(int id2){
 void client::setperchase(int p2){
      purchases = p2;
 }
-void client::setfname(string n){
-    fname = n;
+void client::setFName(string n){
+    fName = n;
 }
-void client::setlname(string n){
-    lname = n;
+void client::setLName(string n){
+    lName = n;
 }
 client* client::getnextclient(){
     return nextclient;
@@ -93,10 +93,10 @@ void client::setnextclient(client* h){
     nextclient = h;
 }
 
-void client::getinfo(){
+void client::getInfo(){
     
     cout<<"client ID: "<<id<<endl;
-    cout<<"client's first name is: "<<fname<<endl;
-    cout<<"clients last name is: "<<lname<<endl;
+    cout<<"client's first name is: "<<fName<<endl;
+    cout<<"clients last name is: "<<lName<<endl;
     cout<<"clients total purchase amount is: "<<purchases<<endl;
 }

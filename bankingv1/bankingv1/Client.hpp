@@ -16,8 +16,8 @@
 #include<iomanip>
 using namespace std;
 struct client{
-    string fname;
-    string lname;
+    string fName;
+    string lName;
     double checking; //balance
     double savings; //balance
 };
@@ -88,7 +88,7 @@ void writeNewClients(client cl[], int size)
     outData.open("clients.dat", ios::app);
     int i;
     for (i = 0; i < size; i++)
-        outData <<cl[i].fname<<" "<<cl[i].lname<<" "<<0.00<<" "<<0.00<<endl;
+        outData <<cl[i].fName<<" "<<cl[i].lName<<" "<<0.00<<" "<<0.00<<endl;
     outData.close();
     Encryption();
 }
@@ -138,7 +138,7 @@ void enterNewClients(client cl[], int size)
     for (i = 0; i < size; i++)
     {
         cout <<"Full Name: ";
-        cin >>cl[i].fname>>cl[i].lname;
+        cin >>cl[i].fName>>cl[i].lName;
     }
    Encryption();
 }
@@ -151,7 +151,7 @@ void transactions(client &cl)
     system("CLS");
     cout <<"\tClient Information:\n"
     <<"\t==================\n"
-    <<"\tName: "<<cl.fname<<" "<<cl.lname<<"\n"
+    <<"\tName: "<<cl.fName<<" "<<cl.lName<<"\n"
     <<"\tChecking Balance: $"<<fixed<<setprecision(2)<<cl.checking<<"\n"
     <<"\tSavings Balance: $"<<cl.savings<<"\n";
     do
@@ -201,8 +201,8 @@ void loadBuffer(client cl[], int size)
     int i;
     for (i = 0; i < size; i++)
     {
-        inData >>cl[i].fname;
-        inData >>cl[i].lname;
+        inData >>cl[i].fName;
+        inData >>cl[i].lName;
         inData >>cl[i].checking;
         inData >>cl[i].savings;
     }

@@ -33,10 +33,10 @@ ClientList::ClientList(){
     ptrhead = NULL;
     ptrend = NULL;
 }
-void ClientList::createcustomer(string fname,string lname, int id, int pur){
-    client *temp= new client(fname,lname,id,pur,NULL);
-    temp->setfname(fname);
-      temp->setlname(lname);
+void ClientList::createcustomer(string fName,string lName, int id, int pur){
+    client *temp= new client(fName,lName,id,pur,NULL);
+    temp->setFName(fName);
+      temp->setLName(lName);
     temp->setid(id);
     temp->setperchase(pur);
     temp->setnextclient(NULL);
@@ -66,7 +66,7 @@ client* ClientList::searchbyid(int name){
 client* ClientList::searchbyfname(string name){
     ptr = ptrhead;
     while(ptr->getnextclient()!= NULL){
-        if(ptr->getfname()==name){
+        if(ptr->getFName()==name){
             return ptr;
         }else{
             ptr = ptr->getnextclient();
@@ -80,7 +80,7 @@ void ClientList::displayclient(){
     temp = ptrhead;
     while(temp!=NULL)
     {
-        temp->getinfo();
+        temp->getInfo();
         cout<<endl;
         temp = temp->getnextclient();
     }
@@ -136,14 +136,14 @@ void List::sortstudents(){
             if(temphead->getstuid() > temp2->getstuid()){
                 
                 tempid = temphead->getstuid();
-                tempfn = temphead->getfname();
+                tempfn = temphead->getFName();
                 templn = temphead->getlname();
                 tempcr = temphead->getcredits();
                 temphead->setID(temp2->getstuid());
-                temphead->setname(temp2->getfname(), temp2->getlname());
+                temphead->setName(temp2->getFName(), temp2->getlname());
                 temphead->setcredits(temp2->getcredits());
                 temp2->setID(tempid);
-                temp2->setname(tempfn,templn);
+                temp2->setName(tempfn,templn);
                 temp2->setcredits(tempcr);
                 temp2 = temp2->getnexrstudent();
                 temphead = temphead->getnexrstudent();

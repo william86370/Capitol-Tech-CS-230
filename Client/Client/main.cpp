@@ -70,7 +70,7 @@ int main(int argc, const char * argv[]) {
                         if(temp==NULL){
                             cout<<"the client your searching for dosent exist"<<endl;
                         }else{
-                            temp->getinfo();
+                            temp->getInfo();
                         }
                     }else{
                         string name;
@@ -80,7 +80,7 @@ int main(int argc, const char * argv[]) {
                         if(temp==NULL){
                             cout<<"the student your searching for dosent exist"<<endl;
                         }else{
-                            temp->getinfo();
+                            temp->getInfo();
                         }
                     }
                 }else{
@@ -91,7 +91,7 @@ int main(int argc, const char * argv[]) {
                     if(temp==NULL){
                         cout<<"the client your searching for dosent exist"<<endl;
                     }else{
-                        temp->getinfo();
+                        temp->getInfo();
                     }
                     
                     
@@ -109,13 +109,13 @@ int main(int argc, const char * argv[]) {
                 cin>> templ;
                 cout<<"enter clitns total purchase ampunt"<<endl;
                 cin>> temppur;
-                temp->setfname(tempn);
+                temp->setFName(tempn);
                 temp->setid(tempID);
                     break;
             }case 3:{
                 client *temp = clients->findhighestpur();
                 cout<<"the highest paying client is"<<endl;
-                temp->getinfo();
+                temp->getInfo();
                 
                 
                 

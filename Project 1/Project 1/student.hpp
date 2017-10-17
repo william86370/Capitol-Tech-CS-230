@@ -16,57 +16,57 @@ class student{
 public:
     student();
     student(string,string);
-    void setfname(string);
-    void setlname(string);
-    string getfname();
-    string getlastname();
-    student* getnext();
-    void setnext(student*);
-    classlist* getclasslist();
-    void getinfo();
-    void setcorce(classes*);
+    void setFName(string);
+    void setLName(string);
+    string getFName();
+    string getLName();
+    student* getNext();
+    void setNext(student*);
+    classlist* getClassList();
+    void getInfo();
+    void setCourse(classes*);
 private:
-    string fname;
-    string lname;
+    string fName;
+    string lName;
     classlist* list;
     student* next;
 };
 student::student(){
-    fname =""; 
-    lname="";
+    fName =""; 
+    lName="";
     next = NULL;
     list = new classlist;
 }
 student::student(string fn,string ln){
-    fname = fn;
-    lname = ln;
+    fName = fn;
+    lName = ln;
     next = NULL;
     list = new classlist;
 }
-void student::setfname(string fn){
-    fname = fn;
+void student::setFName(string fn){
+    fName = fn;
 }
-void student::setlname(string ln ){
-    lname = ln;
+void student::setLName(string ln ){
+    lName = ln;
 }
-string student::getfname(){
-    return fname;
+string student::getFName(){
+    return fName;
 }
-string student::getlastname(){
-    return lname;
+string student::getLName(){
+    return lName;
 }
-student* student::getnext(){
+student* student::getNext(){
     return next;
 }
-void student::setnext(student* gg){
+void student::setNext(student* gg){
     next = gg;
 }
-classlist* student::getclasslist(){
+classlist* student::getClassList(){
     return list;
 }
-void student::getinfo(){
-    cout<<"name: "<<fname <<" "<<lname
+void student::getInfo(){
+    cout<<"name: "<<fName <<" "<<lName
     <<endl;
     cout<<"this student is takeing"<<endl;
-    list->displayclasses();
+    list->displayClasses();
 }

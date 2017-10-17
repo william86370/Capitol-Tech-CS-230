@@ -6,8 +6,8 @@ using namespace std;
 class Student {
 private:
     string stuID;
-    string fname;
-    string lname;
+    string fName;
+    string lName;
     int credits;
     Student* stu;
 public:
@@ -16,38 +16,38 @@ public:
     Student();
     Student(string ,string ,string ,int ,Student* );
   void setID(string);
-    void setname(string,string);
+    void setName(string,string);
     void setcredits(int);
     void nextStudent(Student* stu);
     Student* getnexrStudent();
-    void getinfo();
-    string getfname();
+    void getInfo();
+    string getFName();
      string getlname();
     string getstuid();
 };
 //class implamation
 Student::Student(){
      stuID="";
-     fname="";
-     lname="";
+     fName="";
+     lName="";
      credits=0;
      stu=NULL;
 }
-string Student:: getfname(){
-    return fname;
+string Student:: getFName(){
+    return fName;
 }
 string Student:: getlname(){
-    return fname;
+    return fName;
 }
 Student::Student(string id,string fn,string ln,int cred,Student* st){
     stuID="";
-    fname="";
-    lname="";
+    fName="";
+    lName="";
     credits=0;
     stu=NULL;
     cout<<"Student ID: "<<stuID<<endl;
-    cout<<"Student first name is: "<<fname<<endl;
-    cout<<"Student last name is: "<<lname<<endl;
+    cout<<"Student first name is: "<<fName<<endl;
+    cout<<"Student last name is: "<<lName<<endl;
     cout<<"Student credit number is: "<<credits<<endl;
 }
 string Student::getstuid(){
@@ -56,9 +56,9 @@ string Student::getstuid(){
 void Student::setID(string id){
     stuID =id;
 }
-void Student::setname(string i, string k){
-    fname = i;
-    lname = k;
+void Student::setName(string i, string k){
+    fName = i;
+    lName = k;
 }
 void Student::setcredits(int c){
     credits =c;
@@ -69,10 +69,10 @@ void Student::nextStudent(Student* su){
 Student* Student::getnexrStudent(){
     return stu;
 }
-void Student::getinfo(){
+void Student::getInfo(){
     cout<<"Student ID: "<<stuID<<endl;
-    cout<<"Student first name is: "<<fname<<endl;
-    cout<<"Student last name is: "<<lname<<endl;
+    cout<<"Student first name is: "<<fName<<endl;
+    cout<<"Student last name is: "<<lName<<endl;
     cout<<"Student credit number is: "<<credits<<endl;
 }
 

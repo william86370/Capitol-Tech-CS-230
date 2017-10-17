@@ -21,7 +21,7 @@ private:
  
 public:
     List();
-   void createstudent(string id,string fn,string ln,int cred);
+   void createStudent(string id,string fn,string ln,int cred);
     void displaystudent();
     void sortstudents();
     Student* searchbyfname(string);
@@ -32,10 +32,10 @@ List::List(){
     ptrhead = NULL;
     ptrend = NULL;
 }
-void List::createstudent(string ID, string FN, string LN , int cr){
+void List::createStudent(string ID, string FN, string LN , int cr){
     Student *temp= new Student(ID,FN,LN,cr,NULL);
     temp->setcredits(cr);
-    temp->setname(FN, LN);
+    temp->setName(FN, LN);
     temp->setID(ID);
     temp->nextstudent(NULL);
     temp->nextstudent(NULL);
@@ -65,7 +65,7 @@ Student* List::searchbystuid(string id){
 Student* List::searchbyfname(string name){
     ptr = ptrhead;
     while(ptr->getnexrstudent()!= NULL){
-        if(ptr->getfname()==name){
+        if(ptr->getFName()==name){
             return ptr;
         }else{
            ptr = ptr->getnexrstudent();
@@ -79,7 +79,7 @@ void List::displaystudent(){
     temp = ptrhead;
     while(temp!=NULL)
     {
-        temp->getinfo();
+        temp->getInfo();
         cout<<endl;
         temp = temp->getnexrstudent();
     }
@@ -116,14 +116,14 @@ void List::sortstudents(){
             if(temphead->getstuid() > temp2->getstuid()){
                 
              tempid = temphead->getstuid();
-                tempfn = temphead->getfname();
+                tempfn = temphead->getFName();
                  templn = temphead->getlname();
                 tempcr = temphead->getcredits();
                 temphead->setID(temp2->getstuid());
-                temphead->setname(temp2->getfname(), temp2->getlname());
+                temphead->setName(temp2->getFName(), temp2->getlname());
                 temphead->setcredits(temp2->getcredits());
                 temp2->setID(tempid);
-                temp2->setname(tempfn,templn);
+                temp2->setName(tempfn,templn);
                 temp2->setcredits(tempcr);
                 temp2 = temp2->getnexrstudent();
                 temphead = temphead->getnexrstudent();

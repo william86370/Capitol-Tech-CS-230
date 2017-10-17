@@ -45,7 +45,7 @@ int main(int argc, const char * argv[]) {
             cin>> templ;
              cout<<"enter student credits"<<endl;
             cin>> tempcred;
-            studentlist->createstudent(tempID,tempn,templ,tempcred);
+            studentlist->createStudent(tempID,tempn,templ,tempcred);
             break;
         }case 2:{
             int option;
@@ -70,7 +70,7 @@ int main(int argc, const char * argv[]) {
                     if(temp==NULL){
                         cout<<"the student your searching for dosent exist"<<endl;
                     }else{
-                         temp->getinfo();
+                         temp->getInfo();
                     }
                 }else{
                     string name;
@@ -80,7 +80,7 @@ int main(int argc, const char * argv[]) {
                     if(temp==NULL){
                         cout<<"the student your searching for dosent exist"<<endl;
                     }else{
-                        temp->getinfo();
+                        temp->getInfo();
                     }
                 }
             }else{

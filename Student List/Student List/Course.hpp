@@ -11,28 +11,28 @@ public:
     Course();
     Course(string,string,int );
     void setID(string);
-    void setname(string,string);
+    void setName(string,string);
     void setcredits(int);
     void nexrtCourse(Course* stu);
     Course* getnextCourse();
-    void getinfo();
-    string getname();
+    void getInfo();
+    string getName();
     
     string getcrsid();
 };
 //class implamation
 Course::Course(){
     stuID="";
-    fname="";
-    lname="";
+    fName="";
+    lName="";
     credits=0;
     stu=NULL;
 }
-string Course:: getfname(){
-    return fname;
+string Course:: getFName(){
+    return fName;
 }
 string Course:: getlname(){
-    return fname;
+    return fName;
 }
 Course::Course(string id,string name,int cred,Course* st){
     crsID = id;
@@ -46,7 +46,7 @@ string Course::getstuid(){
 void Course::setID(string id){
     stuID =id;
 }
-void Course::setname(string name2){
+void Course::setName(string name2){
     name = name2;
 }
 void Course::setcredits(int c){
@@ -58,7 +58,7 @@ void Course::nextcourse(Student* su){
 Course* Course::getnextcourse(){
     return stu;
 }
-void Course::getinfo(){
+void Course::getInfo(){
     cout<<"Student ID: "<<crsID<<endl;
     cout<<"Student first name is: "<<name<<endl;
     

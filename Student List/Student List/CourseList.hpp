@@ -29,10 +29,10 @@ CourseList::CourseList(){
 void CourseList::createCourse(string ID, string name , int cr){
     Course *temp = new Course;
     temp->setID(ID);
-    temp->setname(name);
+    temp->setName(name);
     temp->setcredits(cr);
     temp->nextCourse(NULL);
-    temp->getinfo();
+    temp->getInfo();
     if(ptrhead==NULL)
     {
         ptrhead=temp;
@@ -50,7 +50,7 @@ void CourseList::displayCourse(){
     temp = ptrhead;
     while(temp!=NULL)
     {
-        temp->getinfo();
+        temp->getInfo();
         cout<<endl;
         temp = temp->getnextcourse();
     }
