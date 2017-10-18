@@ -1,43 +1,33 @@
-//
-//  main.cpp
-//  lab4
-//
-//  Created by william wright on 10/17/17.
-//  Copyright © 2017 SilverTap. All rights reserved.
-//
-
 //main.cpp
-#include<cstdlib>
+//Lab 4 part 1
+//helpful tutorial used: https://www.youtube.com/watch?v=psJtcFpoUdY
+//names: Lukas Fuller, Alan Morrison, William Wright, Sharon Blankenship, Will Varner
+#include <cstdlib>
 #include "List.hpp"
 using namespace std;
-
-int main(int argc, char** argv){
-    //Creating the list
+int main(int argc, char **argv)
+{
+    //Creating the object Person
     List People;
     
-    //Adding names to the list
-    People.addPerson("Bob", "Joe");
-    People.addPerson("Joe", "Bob");
-    People.addPerson("Bill", "Walton");
+    //Adding names
+    People.AddPerson("Bob", "Joe");
+    People.AddPerson("Joe", "Bob");
+    People.AddPerson("Bill", "Walton");
     
     //Displaying the names in the list
-    People.printList();
-    cout << "\n";
+    People.PrintList();
     
     //Displaying the error when the name isn't in the list
-    People.deletePerson("Generic", "Name");
-    cout << "\n";
-    
-    //Deleting a current name and Displaying the list
-    People.deletePerson("Joe", "Bob");
-    cout << "\n";
-    People.printList();
+    People.DeletePerson("Generic", "Name");
     
     //Edit a person and display the result
     People.EditPerson("Bob", "Joe", "Max", "Scott");
-    People.printList();
-
+    People.PrintList();
+    
+    
+    //Deleting a current name and Displaying the list
+    People.DeletePerson("Joe", "Bob");
+    People.PrintList();
     return 0;
 }
-
-

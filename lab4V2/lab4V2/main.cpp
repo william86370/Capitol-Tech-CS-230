@@ -1,11 +1,7 @@
-//
-//  main.cpp
-//  lab4V2
-//
-//  Created by william wright on 10/17/17.
-//  Copyright © 2017 SilverTap. All rights reserved.
-//
-
+//mainV2.cpp
+//Lab 4 part 2
+//using the C++ standard library, URL-> http://www.cplusplus.com/reference/list/list/sort/
+//names: Lukas Fuller, Alan Morrison, William Wright, Sharon Blankenship, & Will Varner
 #include <cstdlib>
 #include <list>
 #include <string>
@@ -13,7 +9,8 @@
 #include "List.hpp"
 using namespace std;
 
-int main(int argc, char** argv){
+int main(int argc, char **argv)
+{
     //Creating the list
     List People;
     //creating a list for sorting
@@ -31,6 +28,10 @@ int main(int argc, char** argv){
     //Displaying the error when the name isn't in the list
     People.DeletePerson("Generic", "Name");
     
+    //Edit a person and display the result
+    People.EditPerson("Bob", "Joe", "Max", "Scott");
+    People.PrintList();
+    
     //Deleting a current name and Displaying the list
     People.DeletePerson("Bob", "Joe");
     People.PrintList();
@@ -47,10 +48,10 @@ int main(int argc, char** argv){
     //Sort and Display
     sortedList.sort();
     std::cout << "Sorted by last names:";
-    for (it=sortedList.begin(); it!=sortedList.end(); ++it)
-        std::cout << "\n" << *it;
+    for (it = sortedList.begin(); it != sortedList.end(); ++it)
+        std::cout << "\n"
+        << *it;
     std::cout << "\n";
     
     return 0;
 }
-

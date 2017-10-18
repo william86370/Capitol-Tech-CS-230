@@ -1,20 +1,13 @@
-//
-//  List.hpp
-//  lab4
-//
-//  Created by william wright on 10/17/17.
-//  Copyright © 2017 SilverTap. All rights reserved.
-//
-//List.cpp
-#include <cstdlib>
-#include <iostream>
-
+//List.h
+//Lab 4 part 1
 
 using namespace std;
+#include <cstdlib>
+#include <iostream>
 class List{
 private:
     typedef struct node{
-        std::string fName, lName;
+        string fName, lName;
         node* next;
     }* nodePtr;
     
@@ -25,12 +18,13 @@ private:
     
 public:
     List();
-    void addPerson(string addFName, string addLName);
-    void deletePerson(string delFName, string delLName);
-    void printList();
+    void AddPerson(string addFName, string addLName);
+    void DeletePerson(string delFName, string delLName);
     void EditPerson(string currFName, string currLName, string editFName, string editLName);
-
+    void PrintList();
 };
+
+
 
 List::List(){
     head = NULL;
@@ -38,7 +32,7 @@ List::List(){
     temp = NULL;
 }
 
-void List::addPerson(string addFName, string addLName){
+void List::AddPerson(string addFName, string addLName){
     nodePtr n = new node;
     n->next = NULL;
     n->fName = addFName;
@@ -56,7 +50,7 @@ void List::addPerson(string addFName, string addLName){
     }
 }
 
-void List::deletePerson(string delFName, string delLName){
+void List::DeletePerson(string delFName, string delLName){
     nodePtr delPtr = NULL;
     temp = head;
     curr = head;
@@ -80,18 +74,7 @@ void List::deletePerson(string delFName, string delLName){
         cout << "The Name " << delFName << " " << delLName<< " was deleted"<< endl;
         
     }
-    
-    
-}
-
-void List::printList(){
-    curr = head;
-    cout << "The current list of people include:\n";
-    while (curr != NULL)
-    {
-        cout << curr->fName << " " << curr->lName << endl;
-        curr = curr->next;
-    }
+    cout << "\n";
 }
 void List::EditPerson(string currFName, string currLName, string editFName, string editLName){
     nodePtr editPtr = NULL;
@@ -116,7 +99,13 @@ void List::EditPerson(string currFName, string currLName, string editFName, stri
     cout << "\n";
 }
 
-
-
-
-
+void List::PrintList(){
+    curr = head;
+    cout << "The current list of people include:\n";
+    while (curr != NULL)
+    {
+        cout << curr->fName << " " << curr->lName << endl;
+        curr = curr->next;
+    }
+    cout << "\n";
+}
