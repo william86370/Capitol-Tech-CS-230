@@ -1,11 +1,7 @@
 //
 //  classlist.hpp
 //  Project 1
-//
-//  Created by william wright on 10/10/17.
-//  Copyright © 2017 SilverTap. All rights reserved.
-//
-
+//Lukas Fuller, William Wright, Sharon Blankenship, Alan Morrison, Will Varner
 #ifndef classlist_hpp
 #define classlist_hpp
 #include "classes.hpp"
@@ -20,38 +16,38 @@ private:
 public:
     classlist();
     void createxclass(string,double,classes*);
-    void displayclasses();
-    void createclass(classes*);
-    void createclass(classes*,double);
-    classes* findclass(string);
+    void displayClasses();
+    void createClass(classes*);
+    void createClass(classes*,double);
+    classes* findClass(string);
 };
 classlist::classlist(){
     ptrhead = NULL;
     ptrend = NULL;
 }
-classes* classlist::findclass(string find){
+classes* classlist::findClass(string find){
     ptr = ptrhead;
-    while(ptr->getnext()!= NULL){
-        cout<<ptr->getname();
-        if(ptr->getname()==find){
+    while(ptr->getNext()!= NULL){
+        cout<<ptr->getName();
+        if(ptr->getName()==find){
             return ptr;
         }else{
-            ptr = ptr->getnext();
+            ptr = ptr->getNext();
         }
     }
-    if(ptr->getnext()== NULL){
-        cout<<ptr->getname();
-        if(ptr->getname()==find){
+    if(ptr->getNext()== NULL){
+        cout<<ptr->getName();
+        if(ptr->getName()==find){
             return ptr;
         }
     }
     return NULL;
 }
-void classlist::createclass(classes* cl,double gr){
+void classlist::createClass(classes* cl,double gr){
     classes* temp = new classes;
-    temp->setname(cl->getname());
-    temp->setgrade(gr);
-    temp->setnext(NULL);
+    temp->setName(cl->getName());
+    temp->setGrade(gr);
+    temp->setNext(NULL);
     if(ptrhead==NULL)
     {
         ptrhead=temp;
@@ -60,15 +56,15 @@ void classlist::createclass(classes* cl,double gr){
     }
     else
     {
-        ptrend->setnext(temp);
+        ptrend->setNext(temp);
         ptrend=temp;
     }
 }
-void classlist::createclass(classes* cl){
+void classlist::createClass(classes* cl){
     classes* temp = new classes;
-    temp->setgrade(cl->getgrade());
-    temp->setname(cl->getname());
-    temp->setnext(NULL);
+    temp->setGrade(cl->getGrade());
+    temp->setName(cl->getName());
+    temp->setNext(NULL);
     if(ptrhead==NULL)
     {
         ptrhead=temp;
@@ -77,15 +73,15 @@ void classlist::createclass(classes* cl){
     }
     else
     {
-        ptrend->setnext(temp);
+        ptrend->setNext(temp);
         ptrend=temp;
     }
 }
 void classlist::createxclass(string name, double grade, classes* cl){
     classes *temp= new classes(name,grade,cl);
-    temp->setname(name);
-    temp->setgrade(grade);
-    temp->setnext(NULL);
+    temp->setName(name);
+    temp->setGrade(grade);
+    temp->setNext(NULL);
     if(ptrhead==NULL)
     {
         ptrhead=temp;
@@ -94,17 +90,17 @@ void classlist::createxclass(string name, double grade, classes* cl){
     }
     else
     {
-        ptrend->setnext(temp);
+        ptrend->setNext(temp);
         ptrend=temp;
     }
 }
-void classlist::displayclasses(){
+void classlist::displayClasses(){
     classes *temp = new classes;
     temp = ptrhead;
     while(temp!=NULL)
     {
-        temp->getinfo();
+        temp->getInfo();
         cout<<endl;
-        temp = temp->getnext();
+        temp = temp->getNext();
     }
 }
