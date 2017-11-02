@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10E259F11FA6CF630033F2C1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10E259EF1FA6CF630033F2C1 /* main.cpp */; };
-		10E259F21FA6CF630033F2C1 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10E259F01FA6CF630033F2C1 /* Person.cpp */; };
+		10E25A001FAB728C0033F2C1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10E259FF1FAB728C0033F2C1 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		109260331F98FBBF0067F55D /* CopyFiles */ = {
+		10E259FA1FAB728C0033F2C1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,17 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		109260351F98FBBF0067F55D /* Lab 5: Inheritance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5: Inheritance"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10E259EB1FA6CF630033F2C1 /* Faculty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Faculty.h; sourceTree = "<group>"; };
-		10E259EC1FA6CF630033F2C1 /* Staff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
-		10E259ED1FA6CF630033F2C1 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		10E259EE1FA6CF630033F2C1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		10E259EF1FA6CF630033F2C1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		10E259F01FA6CF630033F2C1 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		10E259FC1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Project 2: Inheritance and Polymorphism"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10E259FF1FAB728C0033F2C1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		109260321F98FBBF0067F55D /* Frameworks */ = {
+		10E259F91FAB728C0033F2C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,101 +38,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1092602C1F98FBBF0067F55D = {
+		10E259F31FAB728C0033F2C1 = {
 			isa = PBXGroup;
 			children = (
-				109260371F98FBBF0067F55D /* Lab 5: Inheritance */,
-				109260361F98FBBF0067F55D /* Products */,
+				10E259FE1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */,
+				10E259FD1FAB728C0033F2C1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		109260361F98FBBF0067F55D /* Products */ = {
+		10E259FD1FAB728C0033F2C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				109260351F98FBBF0067F55D /* Lab 5: Inheritance */,
+				10E259FC1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		109260371F98FBBF0067F55D /* Lab 5: Inheritance */ = {
+		10E259FE1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */ = {
 			isa = PBXGroup;
 			children = (
-				10E259EB1FA6CF630033F2C1 /* Faculty.h */,
-				10E259F01FA6CF630033F2C1 /* Person.cpp */,
-				10E259EE1FA6CF630033F2C1 /* Person.h */,
-				10E259EC1FA6CF630033F2C1 /* Staff.h */,
-				10E259ED1FA6CF630033F2C1 /* Student.h */,
-				10E259EF1FA6CF630033F2C1 /* main.cpp */,
+				10E259FF1FAB728C0033F2C1 /* main.cpp */,
 			);
-			path = "Lab 5: Inheritance";
+			path = "Project 2: Inheritance and Polymorphism";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		109260341F98FBBF0067F55D /* Lab 5: Inheritance */ = {
+		10E259FB1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1092603C1F98FBBF0067F55D /* Build configuration list for PBXNativeTarget "Lab 5: Inheritance" */;
+			buildConfigurationList = 10E25A031FAB728C0033F2C1 /* Build configuration list for PBXNativeTarget "Project 2: Inheritance and Polymorphism" */;
 			buildPhases = (
-				109260311F98FBBF0067F55D /* Sources */,
-				109260321F98FBBF0067F55D /* Frameworks */,
-				109260331F98FBBF0067F55D /* CopyFiles */,
+				10E259F81FAB728C0033F2C1 /* Sources */,
+				10E259F91FAB728C0033F2C1 /* Frameworks */,
+				10E259FA1FAB728C0033F2C1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Lab 5: Inheritance";
-			productName = "Lab 5: Inheritance";
-			productReference = 109260351F98FBBF0067F55D /* Lab 5: Inheritance */;
+			name = "Project 2: Inheritance and Polymorphism";
+			productName = "Project 2: Inheritance and Polymorphism";
+			productReference = 10E259FC1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1092602D1F98FBBF0067F55D /* Project object */ = {
+		10E259F41FAB728C0033F2C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = SilverTap;
 				TargetAttributes = {
-					109260341F98FBBF0067F55D = {
-						CreatedOnToolsVersion = 9.0;
+					10E259FB1FAB728C0033F2C1 = {
+						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 109260301F98FBBF0067F55D /* Build configuration list for PBXProject "Lab 5: Inheritance" */;
+			buildConfigurationList = 10E259F71FAB728C0033F2C1 /* Build configuration list for PBXProject "Project 2: Inheritance and Polymorphism" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 1092602C1F98FBBF0067F55D;
-			productRefGroup = 109260361F98FBBF0067F55D /* Products */;
+			mainGroup = 10E259F31FAB728C0033F2C1;
+			productRefGroup = 10E259FD1FAB728C0033F2C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				109260341F98FBBF0067F55D /* Lab 5: Inheritance */,
+				10E259FB1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		109260311F98FBBF0067F55D /* Sources */ = {
+		10E259F81FAB728C0033F2C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10E259F21FA6CF630033F2C1 /* Person.cpp in Sources */,
-				10E259F11FA6CF630033F2C1 /* main.cpp in Sources */,
+				10E25A001FAB728C0033F2C1 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1092603A1F98FBBF0067F55D /* Debug */ = {
+		10E25A011FAB728C0033F2C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -193,7 +181,7 @@
 			};
 			name = Debug;
 		};
-		1092603B1F98FBBF0067F55D /* Release */ = {
+		10E25A021FAB728C0033F2C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +229,7 @@
 			};
 			name = Release;
 		};
-		1092603D1F98FBBF0067F55D /* Debug */ = {
+		10E25A041FAB728C0033F2C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -250,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		1092603E1F98FBBF0067F55D /* Release */ = {
+		10E25A051FAB728C0033F2C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -262,25 +250,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		109260301F98FBBF0067F55D /* Build configuration list for PBXProject "Lab 5: Inheritance" */ = {
+		10E259F71FAB728C0033F2C1 /* Build configuration list for PBXProject "Project 2: Inheritance and Polymorphism" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1092603A1F98FBBF0067F55D /* Debug */,
-				1092603B1F98FBBF0067F55D /* Release */,
+				10E25A011FAB728C0033F2C1 /* Debug */,
+				10E25A021FAB728C0033F2C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1092603C1F98FBBF0067F55D /* Build configuration list for PBXNativeTarget "Lab 5: Inheritance" */ = {
+		10E25A031FAB728C0033F2C1 /* Build configuration list for PBXNativeTarget "Project 2: Inheritance and Polymorphism" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1092603D1F98FBBF0067F55D /* Debug */,
-				1092603E1F98FBBF0067F55D /* Release */,
+				10E25A041FAB728C0033F2C1 /* Debug */,
+				10E25A051FAB728C0033F2C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1092602D1F98FBBF0067F55D /* Project object */;
+	rootObject = 10E259F41FAB728C0033F2C1 /* Project object */;
 }
