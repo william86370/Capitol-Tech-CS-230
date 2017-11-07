@@ -6,12 +6,12 @@
 //  Copyright © 2017 SilverTap. All rights reserved.
 //
 
-#ifndef Food_hpp
-#define Food_hpp
-using namespace std;
-#include <stdio.h>
 
-#endif /* Food_hpp */
+#ifndef Item_h
+#define Item_h
+#include <stdio.h>
+#include <iostream>
+#endif
 using namespace std;
 class item{
 private:
@@ -21,7 +21,6 @@ public:
     item(string,double);
     string getname();
     double getprice();
-    
 };
 item::item(string nameh,double pricei){
     name = nameh;

@@ -1,8 +1,11 @@
 //Movie test main file
+#ifndef Movie_testfile_cpp
+#define Movie_testfile_cpp
 #include<iostream>
 #include<fstream>
 #include"Movies.h"
 #include<stdio.h>
+#endif
 using namespace std;
 
 int main()
@@ -21,43 +24,43 @@ cout<<"!!FILE NOT OPENED!!"<<endl;
 }
 
 //Movie 1
-outfile<<mov1.setTitle("Lion King");
+mov1.setTitle("Lion King");
 
-outfile<<mov1.setYear(1994);
+mov1.setYear(1994);
 
-outfile<<mov1.setFormat("VHS");
+mov1.setFormat("VHS");
 
-outfile<<mov1.setDirector("Benny Reese");
+mov1.setDirector("Benny Reese");
                             
-outfile<<mov1.setRating(5.0);
+mov1.setRating(5.0);
 
-outfile<<mov1.Numcopies(3);
+mov1.Numcopies(3);
 
 //Movie 2
-outfile<<mov2.setTitle("The Kingsman");
+mov2.setTitle("The Kingsman");
 
-outfile<<mov2.setYear(2013);
+mov2.setYear(2013);
 
-outfile<<mov2.setFormat("Digital");
+mov2.setFormat("Digital");
 
-outfile<<mov2.setDirector("Tarantino");
+mov2.setDirector("Tarantino");
 
-outfile<<mov2.setRating(3.5);
+mov2.setRating(3.5);
 
-outfile<<mov2.Numcopies(1);
+mov2.Numcopies(1);
 
 //Movie 3
-outfile<<mov3.setTitle("Thor: Raganarok");
+mov3.setTitle("Thor: Raganarok");
 
-outfile<<mov3.setYear(2017);
+mov3.setYear(2017);
 
-outfile<<mov3.setFormat("Digital");
+mov3.setFormat("Digital");
 
-outfile<<mov3.setDirector("Michael Jackson");
+mov3.setDirector("Michael Jackson");
 
-outfile<<mov3.setRating(2.0);
+mov3.setRating(2.0);
 
-outfile<<mov3.Numcopies(20);
+mov3.Numcopies(20);
 
 outfile.close();
 

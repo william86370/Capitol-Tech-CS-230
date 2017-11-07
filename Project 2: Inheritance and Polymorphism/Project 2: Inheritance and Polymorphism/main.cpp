@@ -5,11 +5,10 @@
 //  Created by william wright on 11/2/17.
 //  Copyright © 2017 SilverTap. All rights reserved.
 //
+#ifndef main_cpp
+#define main_cpp
+#include "Item.h"
+#include "Movie testfile.cpp"
+#endif
 
-#include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
-}

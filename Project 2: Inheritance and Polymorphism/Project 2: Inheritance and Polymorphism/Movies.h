@@ -1,6 +1,9 @@
 //Movies header file w/implementation
 //Movies is derived class of Item
+#ifndef Movies_h
+#define Movies_h
 #include<iostream>
+#endif
 using namespace std;
 
 class Movie //class Movie,public Item
@@ -24,12 +27,12 @@ public:
 	 file will be like record that can't be changed by customer,so
 	 setters restrict data change
 	 */
-	 float setRating(float r);
-	 int Numcopies(int c);
-	 int setYear(int y);
-	 string setTitle(string t);
-	 string setFormat(string f);
-	 string setDirector(string d);
+	 void setRating(float);
+	 void Numcopies(int);
+	 void setYear(int);
+	 void setTitle(string);
+	 void setFormat(string);
+	 void setDirector(string);
 };
 
 // Movie Header Implementation
