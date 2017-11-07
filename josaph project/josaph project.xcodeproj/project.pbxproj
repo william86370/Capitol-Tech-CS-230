@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10E25A001FAB728C0033F2C1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10E259FF1FAB728C0033F2C1 /* main.cpp */; };
+		101C19A81FAFE44900456296 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 101C19A71FAFE44900456296 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		10E259FA1FAB728C0033F2C1 /* CopyFiles */ = {
+		101C19A21FAFE44900456296 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,17 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		103303B11FB21EB90074AC56 /* Grocery.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Grocery.hpp; sourceTree = "<group>"; };
-		103303B21FB21EB90074AC56 /* Clothings.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Clothings.hpp; sourceTree = "<group>"; };
-		103303B31FB21EB90074AC56 /* Item.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Item.hpp; sourceTree = "<group>"; };
-		103303B41FB21EB90074AC56 /* Electronics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Electronics.hpp; sourceTree = "<group>"; };
-		103303B51FB21EC00074AC56 /* Movies.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Movies.hpp; sourceTree = "<group>"; };
-		10E259FC1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Project 2: Inheritance and Polymorphism"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10E259FF1FAB728C0033F2C1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		101C19A41FAFE44900456296 /* josaph project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "josaph project"; sourceTree = BUILT_PRODUCTS_DIR; };
+		101C19A71FAFE44900456296 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		10E259F91FAB728C0033F2C1 /* Frameworks */ = {
+		101C19A11FAFE44900456296 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,100 +38,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10E259F31FAB728C0033F2C1 = {
+		101C199B1FAFE44900456296 = {
 			isa = PBXGroup;
 			children = (
-				10E259FE1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */,
-				10E259FD1FAB728C0033F2C1 /* Products */,
+				101C19A61FAFE44900456296 /* josaph project */,
+				101C19A51FAFE44900456296 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		10E259FD1FAB728C0033F2C1 /* Products */ = {
+		101C19A51FAFE44900456296 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				10E259FC1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */,
+				101C19A41FAFE44900456296 /* josaph project */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		10E259FE1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */ = {
+		101C19A61FAFE44900456296 /* josaph project */ = {
 			isa = PBXGroup;
 			children = (
-				103303B21FB21EB90074AC56 /* Clothings.hpp */,
-				103303B41FB21EB90074AC56 /* Electronics.hpp */,
-				103303B11FB21EB90074AC56 /* Grocery.hpp */,
-				103303B31FB21EB90074AC56 /* Item.hpp */,
-				103303B51FB21EC00074AC56 /* Movies.hpp */,
-				10E259FF1FAB728C0033F2C1 /* main.cpp */,
+				101C19A71FAFE44900456296 /* main.c */,
 			);
-			path = "Project 2: Inheritance and Polymorphism";
+			path = "josaph project";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		10E259FB1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */ = {
+		101C19A31FAFE44900456296 /* josaph project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10E25A031FAB728C0033F2C1 /* Build configuration list for PBXNativeTarget "Project 2: Inheritance and Polymorphism" */;
+			buildConfigurationList = 101C19AB1FAFE44900456296 /* Build configuration list for PBXNativeTarget "josaph project" */;
 			buildPhases = (
-				10E259F81FAB728C0033F2C1 /* Sources */,
-				10E259F91FAB728C0033F2C1 /* Frameworks */,
-				10E259FA1FAB728C0033F2C1 /* CopyFiles */,
+				101C19A01FAFE44900456296 /* Sources */,
+				101C19A11FAFE44900456296 /* Frameworks */,
+				101C19A21FAFE44900456296 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Project 2: Inheritance and Polymorphism";
-			productName = "Project 2: Inheritance and Polymorphism";
-			productReference = 10E259FC1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */;
+			name = "josaph project";
+			productName = "josaph project";
+			productReference = 101C19A41FAFE44900456296 /* josaph project */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		10E259F41FAB728C0033F2C1 /* Project object */ = {
+		101C199C1FAFE44900456296 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = SilverTap;
 				TargetAttributes = {
-					10E259FB1FAB728C0033F2C1 = {
+					101C19A31FAFE44900456296 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 10E259F71FAB728C0033F2C1 /* Build configuration list for PBXProject "Project 2: Inheritance and Polymorphism" */;
+			buildConfigurationList = 101C199F1FAFE44900456296 /* Build configuration list for PBXProject "josaph project" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 10E259F31FAB728C0033F2C1;
-			productRefGroup = 10E259FD1FAB728C0033F2C1 /* Products */;
+			mainGroup = 101C199B1FAFE44900456296;
+			productRefGroup = 101C19A51FAFE44900456296 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				10E259FB1FAB728C0033F2C1 /* Project 2: Inheritance and Polymorphism */,
+				101C19A31FAFE44900456296 /* josaph project */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		10E259F81FAB728C0033F2C1 /* Sources */ = {
+		101C19A01FAFE44900456296 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10E25A001FAB728C0033F2C1 /* main.cpp in Sources */,
+				101C19A81FAFE44900456296 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		10E25A011FAB728C0033F2C1 /* Debug */ = {
+		101C19A91FAFE44900456296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +181,7 @@
 			};
 			name = Debug;
 		};
-		10E25A021FAB728C0033F2C1 /* Release */ = {
+		101C19AA1FAFE44900456296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +229,7 @@
 			};
 			name = Release;
 		};
-		10E25A041FAB728C0033F2C1 /* Debug */ = {
+		101C19AC1FAFE44900456296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -248,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		10E25A051FAB728C0033F2C1 /* Release */ = {
+		101C19AD1FAFE44900456296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,25 +250,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10E259F71FAB728C0033F2C1 /* Build configuration list for PBXProject "Project 2: Inheritance and Polymorphism" */ = {
+		101C199F1FAFE44900456296 /* Build configuration list for PBXProject "josaph project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10E25A011FAB728C0033F2C1 /* Debug */,
-				10E25A021FAB728C0033F2C1 /* Release */,
+				101C19A91FAFE44900456296 /* Debug */,
+				101C19AA1FAFE44900456296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10E25A031FAB728C0033F2C1 /* Build configuration list for PBXNativeTarget "Project 2: Inheritance and Polymorphism" */ = {
+		101C19AB1FAFE44900456296 /* Build configuration list for PBXNativeTarget "josaph project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10E25A041FAB728C0033F2C1 /* Debug */,
-				10E25A051FAB728C0033F2C1 /* Release */,
+				101C19AC1FAFE44900456296 /* Debug */,
+				101C19AD1FAFE44900456296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 10E259F41FAB728C0033F2C1 /* Project object */;
+	rootObject = 101C199C1FAFE44900456296 /* Project object */;
 }
