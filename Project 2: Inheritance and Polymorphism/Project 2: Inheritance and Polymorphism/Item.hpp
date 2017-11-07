@@ -8,7 +8,7 @@
 
 #ifndef Food_hpp
 #define Food_hpp
-
+using namespace std;
 #include <stdio.h>
 
 #endif /* Food_hpp */
@@ -20,6 +20,16 @@ private:
 public:
     item(string,double);
     string getname();
+    double getprice();
     
 };
-
+item::item(string nameh,double pricei){
+    name = nameh;
+    price = pricei;
+}
+string item::getname(){
+    return name;
+}
+double item::getprice(){
+    return price;
+}
